@@ -1,14 +1,15 @@
-
-<?php
+<?php session_start();
 include'connect.php';
 if(isset($_POST['login']))
 {
     $pass=$_POST['pass'];
-    $query="SELECT * FROM patient WHERE aadhar='$pass'";
+    $pwd=$_POST['pwd'];
+    $query="SELECT * FROM patient_details WHERE patient_id='$pass' and password='$pwd'";
     $result=mysqli_query($con,$query);
     if(mysqli_num_rows($result)>0)
     {
-        header("location:patient.php");
+        $_SESSION['PID']=$pass;
+        header("location:patient_dashboard.php");
     }
     else
     {
@@ -21,12 +22,13 @@ if(isset($_POST['login']))
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title> Hospitals Login</title>
+        <title> Patient Login</title>
         
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -52,19 +54,23 @@ if(isset($_POST['login']))
                 <div class="container">
                     <div class="loginbox">
                     <div class="login-left">
-                            <img class="img-fluid" src="assets/img/patient.png" alt="Logo">
+                            <img class="img-fluid" src="assets/img/logo.png" alt="Logo">
                         </div>
                         <div class="login-right">
                             <div class="login-right-wrap">
-                                <h1>Login</h1>
-                                <p class="account-subtitle">Patient's Login</p>
+                                <h1>Patient Login</h1>
+                                <p class="account-subtitle">   </p>
                                 
                                 <!-- Form -->
                                 <form method="post">
                                 <div class="form-group">
-                                        <input class="form-control" type="password" name="pass" placeholder="Aadhar Number">
+                                        <input class="form-control" type="text" name="pass" placeholder="Aadhar Number">
                                     </div>
+                                    <!-- <p class="account-subtitle">Password </p> -->
 
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" name="pwd" placeholder="Password">
+                                    </div>
                                     <!-- <div class="form-group">
                                         <input class="form-control" type="password" name="pass" placeholder="Password">
                                     </div> -->
