@@ -6,18 +6,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Welcome !</title>
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="http://65.0.200.229/test_1/assets/img/favicon.png">
 
 
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/animate.css">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/css/animate.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/css/materialdesignicons.min.css">
 
-<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-<link rel="stylesheet" href="assets/css/styles2.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/plugins/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="http://65.0.200.229/test_1/assets/css/styles2.css">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
 <div class="container-fluid">
 
 <a class="logo-link smooth-menu header-logo" href="#home">
-<img src="assets/img/logo.png" class="logo logo-display" alt="Logo">
+<img src="http://65.0.200.229/test_1/assets/img/logo.png" class="logo logo-display" alt="Logo">
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
 <!-- <i class="fa fa-bars"></i> -->
@@ -76,7 +76,7 @@
 </div>
 <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
 <div class="hero-4-img">
-<a href="" target="_blank"><img src="assets/img/SIH.png" alt=""></a>
+<a href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/SIH.png" alt=""></a>
 </div>
 </div>
 </div>
@@ -108,7 +108,7 @@
 </ul>
 </div>
 <!-- <div class="demo-box">
-<a href="template/index.html" target="_blank" href=""><img class="img-fluid" src="assets/img/image.png" alt=""></a>
+<a href="template/index.html" target="_blank" href=""><img class="img-fluid" src="http://65.0.200.229/test_1/assets/img/image.png" alt=""></a>
 </div>
 <h5 class="text-center mt-3">Dashboard</h5>
 </div>
@@ -125,7 +125,7 @@
 </ul>
 </div>
 <div class="demo-box">
-<a href="template-rtl/index.html" target="_blank" href=""><img class="img-fluid" src="assets/img/home.jpg" alt=""></a>
+<a href="template-rtl/index.html" target="_blank" href=""><img class="img-fluid" src="http://65.0.200.229/test_1/assets/img/home.jpg" alt=""></a>
 </div>
 <h5 class="text-center mt-3">Dashboard RTL</h5>
 </div>
@@ -147,7 +147,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" target="_blank" href="template/teachers.html"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-1.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-1.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/teachers.html" target="_blank">Teachers List</a></div>
@@ -156,7 +156,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/teacher-details.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-2.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-2.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/teacher-details.html" target="_blank">Teachers View</a></div>
@@ -165,7 +165,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/departments.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-3.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-3.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/departments.html" target="_blank">Departments</a></div>
@@ -174,7 +174,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/subjects.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-4.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-4.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/subjects.html" target="_blank">Subjects</a></div>
@@ -183,7 +183,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/fees-collections.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-5.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-5.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/fees-collections.html" target="_blank">Fees</a></div>
@@ -192,7 +192,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/expenses.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-6.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-6.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/expenses.html" target="_blank"> Expenses</a></div>
@@ -201,7 +201,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/salary.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-7.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-7.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/salary.html" target="_blank">Salary</a></div>
@@ -210,7 +210,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/holiday.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-8.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-8.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/holiday.html" target="_blank">Holiday</a></div>
@@ -219,7 +219,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/event.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-9.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-9.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/event.html" target="_blank">Events</a></div>
@@ -228,7 +228,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template/library.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-10.png" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-10.png" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template/library.html" target="_blank">Library</a></div>
@@ -247,7 +247,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" target="_blank" href="template-rtl/teachers.html"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-01.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-01.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/teachers.html" target="_blank">Teachers List</a></div>
@@ -256,7 +256,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/teacher-details.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-02.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-02.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/teacher-details.html" target="_blank">Teachers View</a></div>
@@ -265,7 +265,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/departments.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-03.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-03.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/departments.html" target="_blank">Departments</a></div>
@@ -274,7 +274,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/subjects.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-04.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-04.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/subjects.html" target="_blank">Subjects</a></div>
@@ -283,7 +283,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/fees.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-05.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-05.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/fees.html" target="_blank">Fees</a></div>
@@ -292,7 +292,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/components.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-06.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-06.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/components.html" target="_blank"> Components</a></div>
@@ -301,7 +301,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/salary.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-07.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-07.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/salary.html" target="_blank">Salary</a></div>
@@ -310,7 +310,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/holiday.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-08.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-08.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/holiday.html" target="_blank">Holiday</a></div>
@@ -319,7 +319,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/event.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-09.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-09.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/event.html" target="_blank">Events</a></div>
@@ -328,7 +328,7 @@
 <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
 <div class="project-content wow fadeInUp" data-wow-delay="0.2s">
 <div class="project-link"><a class="button" href="template-rtl/library.html" target="_blank"> View Demo</a></div>
-<a class="overlay-link" href="" target="_blank"><img src="assets/img/image-10.jpg" alt="Project Image" /></a>
+<a class="overlay-link" href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/image-10.jpg" alt="Project Image" /></a>
 </div>
 <div class="project-info">
 <div class="project-title"><a href="template-rtl/library.html" target="_blank">Library</a></div>
@@ -356,11 +356,11 @@
 </div>
 
 </footer>
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/smooth-scroll.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="http://65.0.200.229/test_1/assets/js/jquery-3.6.0.min.js"></script>
+<script src="http://65.0.200.229/test_1/assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://65.0.200.229/test_1/assets/js/wow.min.js"></script>
+<script src="http://65.0.200.229/test_1/assets/js/smooth-scroll.min.js"></script>
+<script src="http://65.0.200.229/test_1/assets/js/main.js"></script>
 
 
 </body>
