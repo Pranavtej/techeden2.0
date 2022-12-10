@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2022 at 04:20 PM
+-- Generation Time: Dec 10, 2022 at 07:31 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -67,6 +67,49 @@ INSERT INTO `doctor_details` (`did`, `dname`, `hid`, `spec_id`, `designation`) V
 ('D0004', 'DR SATISH', 'H0001', 'MBBS', 'S0004'),
 ('D0005', 'DR VIGNESH', 'H0002', 'MBBS,FRCS', 'S0005'),
 ('D0006', 'DR SURESH', 'H0003', 'MBBS,FRCS', 'S0001');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `doctor_prescription`
+--
+
+CREATE TABLE `doctor_prescription` (
+  `pid` varchar(15) NOT NULL,
+  `did` varchar(50) NOT NULL,
+  `prescription` text NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `doctor_prescription`
+--
+
+INSERT INTO `doctor_prescription` (`pid`, `did`, `prescription`, `time`) VALUES
+('579923980899   ', 'D0001', 'A', '2022-12-01 18:04:07'),
+('579923980899   ', 'D0002', 'B', '2022-12-02 18:02:24'),
+('579923980899   ', 'D0003', 'C', '2022-12-03 18:00:23'),
+('579923980899   ', 'D0004', 'A', '2022-12-04 18:00:23'),
+('579923980900   ', 'D0001', 'A', '2022-12-05 18:00:23'),
+('579923980900   ', 'D0002', 'B', '2022-12-01 18:00:23'),
+('579923980900   ', 'D0005', 'B', '2022-12-02 18:00:23'),
+('579923980900   ', 'D0006', 'C', '2022-12-03 18:00:23'),
+('579923980901   ', 'D0003', 'C', '2022-12-04 18:00:23'),
+('579923980901   ', 'D0004', 'A', '2022-12-05 18:00:23'),
+('579923980901   ', 'D0005', 'B', '2022-12-01 18:00:23'),
+('579923980901   ', 'D0006', 'C', '2022-12-02 18:00:23'),
+('579923980902   ', 'D0001', 'A', '2022-12-03 18:00:23'),
+('579923980902   ', 'D0002', 'B', '2022-12-04 18:00:23'),
+('579923980902   ', 'D0003', 'C', '2022-12-05 18:00:23'),
+('579923980902   ', 'D0004', 'A', '2022-12-01 18:00:23'),
+('579923980903   ', 'D0001', 'A', '2022-12-02 18:00:23'),
+('579923980903   ', 'D0002', 'B', '2022-12-03 18:00:23'),
+('579923980903   ', 'D0005', 'B', '2022-12-04 18:00:23'),
+('579923980903   ', 'D0006', 'C', '2022-12-05 18:00:23'),
+('579923980904   ', 'D0003', 'C', '2022-12-01 18:00:23'),
+('579923980904   ', 'D0004', 'A', '2022-12-02 18:00:23'),
+('579923980904   ', 'D0005', 'B', '2022-12-03 18:00:23'),
+('579923980904   ', 'D0006', 'C', '2022-12-04 18:00:23');
 
 -- --------------------------------------------------------
 
@@ -234,6 +277,12 @@ ALTER TABLE `basic_details`
 --
 ALTER TABLE `doctor_details`
   ADD PRIMARY KEY (`did`);
+
+--
+-- Indexes for table `doctor_prescription`
+--
+ALTER TABLE `doctor_prescription`
+  ADD PRIMARY KEY (`pid`,`did`,`time`);
 
 --
 -- Indexes for table `hospital_details`
