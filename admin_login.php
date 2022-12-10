@@ -1,4 +1,22 @@
+<?php
+ include'connect.php';
+if(isset($_POST['login']))
+{
+    $pass=$_POST['pass'];
+    $query="SELECT * FROM admin WHERE password='$pass'";
+    $result=mysqli_query($con,$query);
+    if(mysqli_num_rows($result)>0)
+    {
+        header("location:admin.php");
+    }
+    else
+    {
+        echo"<script>alert('Invalid Password')</script>";
+    }
+}
 
+
+?>
 
 
 
