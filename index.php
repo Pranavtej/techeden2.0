@@ -38,7 +38,7 @@
 <div class="container-fluid">
 
 <a class="logo-link smooth-menu header-logo" href="#home">
-<img src="http://65.0.200.229/test_1/assets/img/logo.png" class="logo logo-display" alt="Logo">
+<!-- <img src="http://65.0.200.229/test_1/assets/img/logo.png" class="logo logo-display" alt="Logo"> -->
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
 <!-- <i class="fa fa-bars"></i> -->
@@ -69,14 +69,14 @@
 <div class="container-fluid">
 <div class="row align-items-center">
 <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
- <h1 style="color:#fff">SIH 2022</h1>
+ <h1 style="color:#fff">TechEden 2.0</h1>
 <h2 style="color:#fff"></h2>
 <!-- <a href="#homepage" target="_blank" class="button">Live Demo</a>
 <a href="https://themeforest.net/item/preskool-bootstrap-admin-html-template/29532878" target="_blank" class="button">Buy Template</a> -->
 </div>
 <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
 <div class="hero-4-img">
-<a href="" target="_blank"><img src="http://65.0.200.229/test_1/assets/img/SIH.png" alt=""></a>
+<a href="" target="_blank"><img src="assets/img/main.png" alt=""></a>
 </div>
 </div>
 </div>
