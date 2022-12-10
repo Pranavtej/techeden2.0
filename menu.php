@@ -3,7 +3,7 @@
             <!-- Logo -->
             <div class="header-left">
                 <a href="dashboard.php" class="logo">
-                    <img src="assets/img/logo.png" alt="Logo">
+                    <img src="assets/img/medlogo.webp" alt="Logo">
                 </a>
                 <a href="dashboard.php" class="logo logo-small">
                     <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
@@ -37,23 +37,18 @@
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-user-graduate"></i> <span>DASHBOARD</span><span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="dashboard.php">HOME</a></li>
-                                <li><a href="fd.php">NEW OUTPATIENT ENTRY</a></li>
-                                <li><a href="search.php">IN PATIENT REGISTRATION</a></li>
-                                <!-- <li><a href="patient_bdetails.php">PATIENT DETAILS</a></li> -->
-                            </ul>
+                            
                         </li>
                         <li class="submenu">
-                            <a href="#"><i class="fas fa-address-book"></i> <span>BILLING ACTIVITY</span><span class="menu-arrow"></span></a>
+                            <a href="#"><i class="fas fa-address-book"></i> <span>PATIENTS</span><span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="search-ip.php">IN PATIENT BILLING ACTIVITY</a></li>
-                                <!-- <li><a href="search-eop.php">OUT PATIENT BILLING ENTRY</a></li> -->
-                                <li><a href="search-aop.php">OUT PATIENT BILLING ACTIVITY</a></li>
+                                <li><a href="onhr_patient.php">NEW PATIENT LINK FOR ONHR</a></li>
+                                <li><a href="new-patient.php">REGISTER NEW PATIENT TO ONHR</a></li>
+                                <li><a href="add_record.php">ADD RECORD</a></li>
                                 
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fas fa-address-book"></i> <span>BILLS</span><span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="search-ipb.php">IN PATIENT VIEW BILLS</a></li>
@@ -61,32 +56,32 @@
                                 <li><a href="iosearch.php">IN PATIENT BILLS</a></li>
                                 <li><a href="searchfop.php">OUT PATIENT BILLS</a></li>
                             </ul>
-                        </li>
-                        <li class="submenu">
+                        </li> -->
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fas fa-filter"></i><span>FILTERS</span> <span class="menu-arrow"></span></a>
                             <ul>
                             <li><a href="edd.php">EDD</a></li>
                             <li><a href="pregnancy_list.php">Pregnancy List</a></li>
                             <li><a href="patient_list.php">Patient List</a></li>
                             </ul>
-                        </li>
-                        <li class="submenu">
+                        </li> -->
+                        <!-- <li class="submenu">
 
                             <a href="#"><i class="fa fa-list-alt"></i><span>DISCHARGE SUMMARY</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="search-discharge.php">Discharge Summary</a></li>
                             </ul>
 
-                        </li>
-                        <li class="submenu">
+                        </li> -->
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fas fa-book"></i> <span>Booking</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="prebooking.php">Booking</a></li>
                                 <li><a href="prebooking_list.php">Today Booking List</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
-                        <li class="submenu">
+                        <!-- <li class="submenu">
 
                             <a href="#"><i class="fas fa-user"></i><span>PROFILE</span> <span class="menu-arrow"></span></a>
                             <ul>
@@ -94,18 +89,18 @@
                                 <li><a href="logout.php"><i class="fas fa-power-off fa-lx"></i> LOG OUT</a></li>
                             </ul>
 
-                        </li>
+                        </li> -->
                        
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fas fa-cogs"></i> <span>SETTINGS</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="patient_details.php">Update Patient Profile</a></li>
                                 <li><a href="search-usf.php">Update Surgery Profiles</a></li>
                                 <li><a href="search-upf.php">Update Pregnancy Profiles</a></li>
                                 <li><a href="search-udischarge.php">Update Discharge Profiles</a></li>
-                                <!-- <li><a href="fees.php">Charges update</a></li> -->
+                                 <li><a href="fees.php">Charges update</a></li> -->
                             </ul>
-                        </li>
+                        </li> 
 
                     </ul>
                 </div>

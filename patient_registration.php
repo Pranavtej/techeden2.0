@@ -70,7 +70,7 @@ if(isset($_POST['submit']))
     <body>
 	
 	<div class="main-wrapper">
-        <!-- <?php include 'menu.php'; ?> -->
+        <!-- <?php include 'menu.php'; ?>+ -->
         <div class="page-wrapper">
 
             <div class="content container-fluid">
