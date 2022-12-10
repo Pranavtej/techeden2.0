@@ -97,13 +97,13 @@
 <div class="demo-wrap mb-0" data-aos="fade-up">
 <div class="demo-tabs">
 <ul class="nav nav-tabs">
-<li class="nav-item"><a  href="public-view.php">Public</a></li>
-<li class="nav-item"><a  href="super-admin-login.php">State&nbspOfficial</a></li>
-<li class="nav-item"><a  href="district-login.php">District&nbspOfficial</a></li>
-<li class="nav-item"><a  href="school-login.php">School&nbspAdmin</a></li>
+<li class="nav-item"><a  href="hospital_login.php">Hospital login</a></li>
+<li class="nav-item"><a  href="doctor_login.php">Doctor login</a></li>
+<li class="nav-item"><a  href="patient_login.php">Patient login</a></li>
+<!-- <li class="nav-item"><a  href="school-login.php">School&nbspAdmin</a></li>
 <li class="nav-item"><a  href="teacher-login.php">Teacher</a></li>
 <li class="nav-item"><a  href="student-login.php">Student</a></li>
-<li class="nav-item"><a  href="parent-login.php">Parent</a></li>
+<li class="nav-item"><a  href="parent-login.php">Parent</a></li> -->
 <!-- <li class="nav-item"><a target="_blank" href="https://preschool.dreamguystech.com/react/dashboard">Reactjs</a></li> -->
 </ul>
 </div>
