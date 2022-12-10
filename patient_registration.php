@@ -9,63 +9,33 @@ include 'connect.php';
 
 if(isset($_POST['submit']))
 {
-	
+	$pan = $_POST['pan'];
+    $pan1=str_replace(' ','',$pan);
+	$patient_id=(int)$pan1;
 	$fname = $_POST['fname'];
 	$fname=strtoupper($fname);
 	$dob = $_POST['pdob'];
+    $age=$_POST['page'];
 	$gen = $_POST['gender'];
 	$gen=strtoupper($gen);
 	$ppn = $_POST['ppn'];
 	$pnn1=(int)$ppn;
-	$pan = $_POST['pan'];
-    $pan1=str_replace(' ','',$pan);
-	$pan1=(int)$pan1;
-	$cas = $_POST['caste'];
-	$cas=strtoupper($cas);
-	$rel = $_POST['religion'];
-	$rel=strtoupper($rel);
+	
+	
 	$pra = $_POST['pra'];
 	$pea = $_POST['pea'];
 	$pq = $_POST['pq'];
 	$pq=strtoupper($pq);
 	$po = $_POST['po'];
 	$po=strtoupper($po);
-	$sc=$_POST['sc'];
-	$sc=(int)$sc;
-	$sn=$_POST['sn'];
-	$sn=strtoupper($sn);
-	$so=$_POST['so'];
-	$so=strtoupper($so);
-	$sq=$_POST['sq'];
-	$sq=strtoupper($sq);
-	$sd=$_POST['sdob']; 
-	$sg=$_POST['sgender'];
-	$sg=strtoupper($sg);
-	$lmp=$_POST['lmp'];
-	$edd=$_POST['edd'];
-	$pog=$_POST['pog'];
-	$pog=strtoupper($pog);
-	$cd=$_POST['ct'];
-	$cd=strtoupper($cd);
-	$ses=$_POST['estatus'];
-	$ses=strtoupper($ses);
-	$sa=$_POST['san'];
-	$san=str_replace(' ','',$sa	);
-	$san1=(int)$san;
-	$sage=$_POST['sage'];
-	$age=$_POST['page'];
+	
+	
 
 
 
-	$query = "INSERT INTO `patient_primary_information`(`id`, `name`, `dob`, `p_age`, `gender`, `patient_phone_number`, 
-	`patient_aadhaar`, `caste`, `religion`, `present_address`, `permanent_address`, `patient_qualification`,
-	 `patient_occupation`, `spouse_name`, `spouse_contact`, `spose_dob`, `spouse_age`, `spouse_gender`, 
-	 `spouse_occupation`, `spouse_qualification`, `lmp`, `edd`, `pog`, `cardtype`, `socio_economic_status`, 
-	 `spouse_aadhaar`) VALUES ('$pid','$fname','$dob','$age','$gen',
-	'$pnn1','$pan1','$cas','$rel','$pra','$pea','$pq','$po','$sn',
-	'$sc','$sd','$sage','$sg','$so','$sq','$lmp','$edd','$pog','$cd','$ses','$san1')";
+	$query = "INSERT INTO `patient_details`(`patient_id`, `password`, `patient_name`, `dob`, `patient_age`, `gender`, `patient_phone_number`, `present_address`, `permanent_address`, `patient_qualification`, `patient_occupation`) VALUES ('$patient_id','$patient_id','$fname','$dob','$age','$gen','$pnn1','$pra','$pea','$pq','$po')";
 	  $run = mysqli_query($con, $query);
-	  echo" <script>document.location='eopre.php?pid=$pid'</script>";
+	  echo" <script>document.location='patient_registration.php?pid=$pid'</script>";
 }
 
 ?>
@@ -100,7 +70,7 @@ if(isset($_POST['submit']))
     <body>
 	
 	<div class="main-wrapper">
-        <?php include 'menu.php'; ?>
+        <!-- <?php include 'menu.php'; ?> -->
         <div class="page-wrapper">
 
             <div class="content container-fluid">
@@ -120,7 +90,7 @@ if(isset($_POST['submit']))
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title">OUT PATIENT FORM</h5>
+									<h5 class="card-title">PATIENT FORM</h5>
 								</div>
 								<div class="card-body">
 								  <form method="post" autocomplete="off" class="needs-validation" novalidate>
@@ -129,11 +99,12 @@ if(isset($_POST['submit']))
 
 												<h5 class="card-title">PATIENT DETAILS</h5>
                                                 <div class="col-md-6">
-                                                            <div class="form-group">
-                                                            
-                                                                <label>Patient ID</label>
-                                                               
-                                                            </div>
+                                                <div class="form-group">
+										            <label>Patient Aadhar Number</label>
+										            <input type="text"  id="aadhaarid" name="pan" pattern="^\d{4}\s\d{4}\s\d{4}${12}" maxlength=14 class="form-control"required>
+													<div class="invalid-feedback">
+														Please choose "Patient Aadhar Number"
+                                                    </div>
                                                         </div>
 												<div class="form-group">
 										            <label>Patient Name</label>
@@ -188,21 +159,9 @@ if(isset($_POST['submit']))
                                                     </div>
 									            </div>
 												
-												<div class="form-group">
-										            <label>Patient Aadhar Number</label>
-										            <input type="text"  id="aadhaarid" name="pan" pattern="^\d{4}\s\d{4}\s\d{4}${12}" maxlength=14 class="form-control"required>
-													<div class="invalid-feedback">
-														Please choose "Patient Aadhar Number"
-                                                    </div>
+												
 									            </div>
-												<div class="form-group">
-													<label>Pan Card Number</label>
-													<div>
-													<input type="text" name="ct" maxlength=10 class="form-control"required>
-													</div>
-													<div class="invalid-feedback">
-																Please choose "card type"
-													</div></div>
+												
 												<div class="form-group">
 										            <label>Patient Qualification</label>
 										            <input type="text" name="pq" class="form-control"required>
@@ -219,14 +178,7 @@ if(isset($_POST['submit']))
                                                     </div>
 									            </div>
 
-												<div class="form-group">
-										            <label>Caste</label>
-										            <input type="text" name="caste" class="form-control"required>
-													<div class="invalid-feedback">
-														Please choose "Caste"
-                                                    </div>
-									            </div>
-
+												
 												
 
 												<div class="form-group">
@@ -236,105 +188,19 @@ if(isset($_POST['submit']))
 														Please choose "Present Address"
                                                     </div>
 									            </div>
-												<div class="form-group">
-													<label>LMP</label>
-													<input type="date" name="lmp" id="lmp" onchange="getEdd();getPog()" class="form-control">
-													<div class="invalid-feedback">
-														Please choose "LMP"
-													</div>
-												</div>
 												
-												<div class="form-group">
-													<label>POG</label>
-													<input type="text" name="pog" id="pog"  class="form-control">
-													<div class="invalid-feedback">
-														Please choose "POG"
-													</div>
-												</div>	
+												
+												
 
 												
-											</div>
-											<div class="col-xl-6">
-												<h5 class="card-title">SPOUSE DETAILS</h5>
-
-											    <div class="form-group">
-										            <label>Spouse Name</label>
-										            <input type="text" name="sn" class="form-control" onkeypress="return (event.charCode > 64 && 
-	                                                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || 
-													 (event.charCode==32) || (event.charCode==46)" required>
-													<div class="invalid-feedback">
-														Please choose "Spouse Name"
-                                                    </div>
-									            </div>
-												<div class="col-lg-9">
-														<div class="row">
-															<label>Spouse DOB</label>
-															<div class="col-md-6">
-																<div class="form-group">
-																	<input type="date" id="sdob" name="sdob" placeholder="Spouse DOB" onchange="getDob1()" class="form-control">
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group">
-																<input type="text" name="sage" id="sage" readonly="readonly" class="form-control"required>
-																</div>
-															</div>
-														</div>
-												</div>
-
-												<div class="form-group">
-													<label class="d-block">Spouse Gender:</label>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="sgender" id="gender_male" value="M"checked>
-														<label class="form-check-label" for="gender_male">Male</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="sgender" id="gender_female" value="F">
-														<label class="form-check-label" for="gender_female">Female</label>
-													</div>
-													<div class="invalid-feedback">
-														Please choose "Gender"
-                                                    </div>
-												</div>
-
-												<div class="form-group">
-										            <label>Spouse Phone Number</label>
-										            <input type="text" pattern="[7-9]{1}[0-9]{9}" maxlength=10 name="sc" class="form-control">
-													<div class="invalid-feedback">
-														Please choose "Spouse Contact"
-                                                    </div>
-									            </div>
+											<!-- </div> -->
+											
 												
-												<div class="form-group">
-										            <label>Spouse Aadhar Number</label>
-													<input type="text"  id="aadhaarid1" name="san" pattern="^\d{4}\s\d{4}\s\d{4}${12}" maxlength=14 class="form-control"required>
-													<div class="invalid-feedback">
-														Please choose "Spouse Aadhar Number"
-                                                    </div>
-									            </div>
-												<div class="form-group">
-										            <label>Socio-Economic Status</label>
-										            <input type="text" name="estatus" class="form-control"required>
-													<div class="invalid-feedback">
-														Please choose "SE-status"
-                                                    </div>
-									            </div>
-												<div class="form-group">
-														<label>Spouse Qualification</label>
-														<input type="text" name="sq" class="form-control">
-														<div class="invalid-feedback">
-															Please choose "Spouse Occupation"
-														</div>
-												</div>
 
+												
 
-												<div class="form-group">
-														<label>Spouse Occupation</label>
-														<input type="text" name="so" class="form-control"required>
-														<div class="invalid-feedback">
-															Please choose "Spouse Qualification"
-														</div>
-												</div>
+												
+												
 												
 
 												
@@ -406,20 +272,7 @@ if(isset($_POST['submit']))
 
 		<script>
 
-			function generate() {
-				let d = document.getElementById("rd").value;
-
-				var xmlhttp=new XMLHttpRequest();
-  				xmlhttp.onreadystatechange=function() {
-    				if (this.readyState==4 && this.status==200) {
-						console.log(this.responseText);
-      					document.getElementById("pid").value=this.responseText;
-    				}
- 				}
-  				xmlhttp.open("GET","generate_pid.php?date="+d,true);
-  				xmlhttp.send();
-			}
-
+			
 			function getDob() {
 
 				let dob = document.getElementById("pdob").value;
@@ -434,42 +287,7 @@ if(isset($_POST['submit']))
   				xmlhttp.send();
 			}
 			
-			function getDob1() {
-			let dob1 = document.getElementById("sdob").value;
-			var xmlhttp=new XMLHttpRequest();
-			xmlhttp.onreadystatechange=function() {
-				if (this.readyState==4 && this.status==200) {
-					console.log(this.responseText);
-					document.getElementById("sage").value=this.responseText;
-				}
-			}
-			xmlhttp.open("GET","generate_dob.php?dob="+dob1,true);
-			xmlhttp.send();
-			}
-			function getEdd() {
-			let lmp1 = document.getElementById("lmp").value;
-			var xmlhttp=new XMLHttpRequest();
-			xmlhttp.onreadystatechange=function() {
-				if (this.readyState==4 && this.status==200) {
-					console.log(this.responseText);
-					document.getElementById("edd").value=this.responseText;
-				}
-			}
-			xmlhttp.open("GET","generate_edd.php?lmp="+lmp1,true);
-			xmlhttp.send();
-			}
-			function getPog() {
-			let lmp2 = document.getElementById("lmp").value;
-			var xmlhttp=new XMLHttpRequest();
-			xmlhttp.onreadystatechange=function() {
-				if (this.readyState==4 && this.status==200) {
-					console.log(this.responseText);
-					document.getElementById("pog").value=this.responseText;
-				}
-			}
-			xmlhttp.open("GET","generate_pog.php?lmp="+lmp2,true);
-			xmlhttp.send();
-			}
+			
 		</script>
 		
     </body>

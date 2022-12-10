@@ -1,6 +1,27 @@
+<?php session_start();
 
+include 'connect.php';
+ 
+if(isset($_POST['login']))
+{
+ $uid = $_POST['pass'];
+ $pass = $_POST['pass1'];
+ $query= "select hid from hospital_details where hid='$uid' and hid='$pass'";
+ $result=mysqli_query($con,$query) or die (mysqli_error($con));
+ $details=mysqli_fetch_assoc($result);
+if($details)
+{
+ echo" <script>document.location='hospital_dashboard.php'</script>";
 
+ }
 
+ else
+ {
+    echo "<script type='text/javascript'>alert('Inavalid Username or Password')</script>";
+
+ }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,11 +64,11 @@
                                 <!-- Form -->
                                 <form method="post">
                                 <div class="form-group">
-                                        <input class="form-control" type="password" name="pass" placeholder="Hospital Id">
+                                        <input class="form-control" type="text" name="pass" placeholder="Hospital Id">
                                     </div>
 
                                     <div class="form-group">
-                                        <input class="form-control" type="password" name="pass" placeholder="Password">
+                                        <input class="form-control" type="password" name="pass1" placeholder="Password">
                                     </div>
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-block" name="login" type="submit">Login</button>

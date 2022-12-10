@@ -1,4 +1,29 @@
+<?php session_start();
 
+include 'connect.php';
+ 
+if(isset($_POST['login']))
+{
+ $uid = $_POST['pass'];
+ $pass = $_POST['pass1'];
+ $query= "select did from doctor_details where did='$uid' and did='$pass'";
+ $result=mysqli_query($con,$query) or die (mysqli_error($con));
+ $details=mysqli_fetch_assoc($result);
+if($details)
+{
+ echo" <script>document.location='doctor_dashboard.php'</script>";
+
+ }
+
+ else
+ {
+    echo "<script type='text/javascript'>alert('Inavalid Username or Password')</script>";
+
+ }
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,11 +65,11 @@
                                 <!-- Form -->
                                 <form method="post">
                                 <div class="form-group">
-                                        <input class="form-control" type="password" name="pass" placeholder="Doctor Id">
+                                        <input class="form-control" type="name" name="pass" placeholder="Doctor Id">
                                     </div>
 
                                     <div class="form-group">
-                                        <input class="form-control" type="password" name="pass" placeholder="Password">
+                                        <input class="form-control" type="password" name="pass1" placeholder="Password">
                                     </div>
                                     <div class="form-group">
                                         <button class="btn btn-primary btn-block" name="login" type="submit">Login</button>
