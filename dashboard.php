@@ -123,13 +123,13 @@
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
                         <div class="card flex-fill"><br>
                             <div>
-                                <h4>&nbsp;&nbsp;OUT PATIENT ACTIVITY</h4>
+                                <h4>&nbsp;&nbsp;PATIENT ACTIVITY</h4>
                             </div>
                             <div class="card-body">
                                 <div>
-                                    <a href="fd.php" class="btn btn-primary">NEW OUT PATIENT REGISTRATION</a><br><br>
-                                    <a href="search-eop.php" class="btn btn-primary">EXISTING OUT PATIENT
-                                        REGISTRATION</a>
+                                    <a href="fd.php" class="btn btn-primary">NEW  PATIENT LINK FOR ONHR</a><br><br>
+                                    <a href="search-eop.php" class="btn btn-primary">REGISTER NEW PATIENT TO ONHR</a>
+                                        <a href="search-eop.php" class="btn btn-primary">ADD RECORD </a>
                                 </div>
                             </div>
                             <!-- <div class="card-body">
@@ -149,7 +149,7 @@
                             </div>--->
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <!-- '<div class="col-12 col-md-6 col-lg-6">
                         <div class="card flex-fill"><br>
                             <div>
                                 <h4>&nbsp;&nbsp;IN PATIENT ACTIVITY</h4>
@@ -179,8 +179,8 @@
                             </div> -->
                         </div>
                     </div>
-                </div>
-
+                </div> -->
+'
             </div>
             <!-- /Page Wrapper -->
 
