@@ -36,11 +36,11 @@
                             <span>Main Menu</span>
                         </li>
                         <li class="submenu">
-                            <a href="#"><i class="fas fa-user-graduate"></i> <span>DASHBOARD</span><span class="menu-arrow"></span></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-grid-horizontal"></i><span>DASHBOARD</span><span class="menu-arrow"></span></a>
                             
                         </li>
                         <li class="submenu">
-                            <a href="#"><i class="fas fa-address-book"></i> <span>PATIENTS</span><span class="menu-arrow"></span></a>
+                            <a href="#"><i class="fa-sharp fa-solid fa-users-medical"></i> <span>PATIENTS</span><span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="onhr_patient.php">NEW PATIENT LINK FOR ONHR</a></li>
                                 <li><a href="new-patient.php">REGISTER NEW PATIENT TO ONHR</a></li>
