@@ -1,5 +1,24 @@
 
+<?php
+include'connect.php';
+if(isset($_POST['login']))
+{
+    $pass=$_POST['pass'];
+    $query="SELECT * FROM patient WHERE aadhar='$pass'";
+    $result=mysqli_query($con,$query);
+    if(mysqli_num_rows($result)>0)
+    {
+        header("location:patient.php");
+    }
+    else
+    {
+        echo"<script>alert('Invalid Password')</script>";
+    }
+}
 
+
+
+?>
 
 
 <!DOCTYPE html>
