@@ -1,4 +1,8 @@
-
+<?php
+include 'connect.php';
+session_start();
+$hid = $_SESSION['hid'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +54,7 @@
                 <!-- /Page Header -->
 
                 <!-- Overview Section -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-xl-3 col-sm-6 col-12 d-flex">
                         <div class="card bg-nine w-100">
                             <a href="patient_details.php">
@@ -115,10 +119,10 @@
                                         </div>
                                     </div>
                             </div></a>
-                        </div>
+                        </div> 
                     </div>
 
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
                         <div class="card flex-fill"><br>
@@ -127,7 +131,7 @@
                             </div>
                             <div class="card-body">
                                 <div>
-                                    <a href="new_olap.php" class="btn btn-primary">NEW  PATIENT LINK FOR ONHR</a><br><br>
+                                    <a href="fd.php" class="btn btn-primary">NEW  PATIENT LINK FOR ONHR</a><br><br>
                                     <a href="search-eop.php" class="btn btn-primary">REGISTER NEW PATIENT TO ONHR</a>
                                         <a href="search-eop.php" class="btn btn-primary">ADD RECORD </a>
                                 </div>

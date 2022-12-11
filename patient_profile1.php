@@ -1,10 +1,13 @@
+
+
+
 <?php include 'connect.php'?>
 <?php include 'patient_menu.php'?>
 <?php 
 session_start();
 
 $pid = $_SESSION['PID'];
-$sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescription as pres,p.time as time from doctor_details d,doctor_prescription p,speciality s where p.pid='$pid' and p.did = d.did and d.designation =s.spec_id order by p.time ");
+$sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescription as pres,p.time as time from doctor_details d,doctor_prescription p,speciality s where p.pid='$pid' and p.did = d.did and d.spec_id =s.spec_id order by p.time ");
 
 
 // $run = mysqli_query($con, $sql);
@@ -57,7 +60,7 @@ $sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescrip
                         </div>
                     </div>
                 </div>
-                <button onclick="javascript:demoFromHTML();">PDF</button>
+                <!-- <button onclick="javascript:demoFromHTML();">PDF</button> -->
                 <div class="row">
 					<h3 >BASIC PREVIOUS RECORDS</h3>
 						<div class="col-sm-12">
@@ -67,10 +70,10 @@ $sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescrip
 										<table id="tab_customers" class="table table-striped">
 											<thead>
 												<tr>
-													<th>Patient ID</th>
-													<th>Name</th>
-                                                    <th>Phone Number</th>
-													<th>Past Records</th>
+													<th>Doctor Name</th>
+													<th>Specialisation</th>
+                                                    <th>Prescription</th>
+													<th>Time</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -79,9 +82,9 @@ $sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescrip
                                                     {
 
                                                         echo '<tr>
-                                                        <td>'.$run['pid'].'</td>
-                                                        <td>'.$run['did'].'</td>
-                                                        <td>'.$run['prescription'].'</td>
+                                                        <td>'.$run['name'].'</td>
+                                                        <td>'.$run['spec'].'</td>
+                                                        <td>'.$run['pres'].'</td>
 														<td>'.$run['time'].'</td>
                                                         </tr>';
                                                     }
