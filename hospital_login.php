@@ -11,6 +11,7 @@ if(isset($_POST['login']))
  $details=mysqli_fetch_assoc($result);
 if($details)
 {
+$_SESSION['hid']=$uid;
  echo" <script>document.location='hospital_dashboard.php'</script>";
 
  }

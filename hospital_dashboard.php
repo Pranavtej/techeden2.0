@@ -132,11 +132,11 @@
                                         <a href="search-eop.php" class="btn btn-primary">ADD RECORD </a>
                                 </div>
                             </div>
-                            <!-- <div class="card-body">
+                            <div class="card-body">
                                 <div >
-                                    <a href="search-eop.php" class="btn btn-primary">EXISTING OUT PATIENT REGISTRATION</a>
+                                    <a href="search_patient.php" class="btn btn-primary">EXISTING PATIENT REGISTRATION</a>
                                  </div>
-                          </div> -->
+                          </div>
                             <!-- <div class="card-body">
                                 <div>
                                     <a href="search-aop.php" class="btn btn-primary">OUT Patient Bill Activity Entry Details</a>
