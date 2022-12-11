@@ -1,3 +1,18 @@
+<?php include 'connect.php'?>
+<?php include 'patient_menu.php'?>
+<?php 
+session_start();
+
+$pid = $_SESSION['PID'];
+$query = "SELECT  patient_id, patient_name, patient_age, gender, patient_phone_number,dob ,permanent_address  FROM  patient_details WHERE patient_id='$pid'";
+
+$run = mysqli_query($con, $query);
+$res = mysqli_fetch_assoc($run);
+
+?>
+
+
+
 <?php include 'patient_menu.php'?>
 <?php include 'connect.php'?>
 <!DOCTYPE html>
@@ -38,13 +53,101 @@
                     <h3 class="page-title">Welcome !</h3>
                     <div class="col-md-9">
                             <ul class="list-links mb-4">
-                                <li class="active"><a href="patient_profile_dashboard.php?pid= ">Dashboard</a></li>
+                                <li class="active"><a href="patient_dashboard.php">Dashboard</a></li>
                                 <li><a href="patient_profile1.php">Patient Profile</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+
+
+
+
+                <div class="card">
+						<div class="card-body">
+                        <div class="about-info">
+							<h3><b>About Me</b></h3>
+                        
+                            <div class="row">
+                                <div class="col-md-12"> 
+                                <div class="media mt-3 d-flex">
+                                        
+                                      
+											<div class="col-md-6">
+												<ul>                                          
+                                                    <li>
+                                                        <span class="title-span">Patient Id :</h4></span>
+                                                        <span class="info-span"><?php echo $res['patient_id']; ?></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-span">Patient Name:</span>
+                                                        <span class="info-span"><?php echo $res['patient_name']; ?></span>
+                                                    </li>
+                                                    
+
+                                                    <li>
+                                                        <span class="title-span">Gender: </span>
+                                                        <span class="info-span"><?php echo $res['gender']; ?></span>
+                                                    </li>
+
+                                                    <li>
+                                                        <span class="title-span">Phone number:</span>
+                                                        <span class="info-span"><?php echo $res['patient_phone_number']; ?></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-span">DOB:</span>
+                                                        <span class="info-span"><?php echo $res['dob']; ?></span>
+                                                    </li>
+                                                    <!-- <li>
+                                                        <span class="title-span">Spouse Name:</span>
+                                                        <span class="info-span"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-span">Spouse Age:</span>
+                                                        <span class="info-span"></span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-span">Spouse Contact: </span>
+                                                        <span class="info-span"></span>
+                                                    </li> -->
+                                                    <li>
+                                                        <span class="title-span"> Address:</span>
+                                                        <span class="info-span"><?php echo $res['permanent_address']; ?></span>
+                                                    </li>
+                                                </ul>
+											</div>
+										</div>
+
+										<div class="row mt-3">                                           
+										</div>
+										
+										<!-- <div class="row follow-sec">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="blue-box">
+                                                    <h3></h3>
+                                                    <p>LMP</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="blue-box">
+                                                    <h3></h3>
+                                                    <p>Expected Date of Delivery</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="blue-box">
+                                                    <h3></h3>
+                                                    <p>POG</p>
+                                                </div>
+                                            </div>
+										</div> -->
+										
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>				
+                <!-- <div class="row">
                     <div class="col-xl-3 col-sm-6 col-12 d-flex">
                         <div class="card bg-nine w-100">
                             <div class="card-body">
@@ -150,12 +253,15 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
                 <!-- <div class="row">
                     <div class="col-md-6">
                         <div class="card flex-fill"><br>
                             <div>
-                                <h4>&nbsp&nbspPatient Important Dates</h4><br>
+                                <h4>&nbsp&nbspPatient Important
+                                    
+                                
+                                Dates</h4><br>
                                     <h6><b>&nbsp&nbsp&nbspEDD&nbsp</b>:&nbsp
                                    </h6><br>     
                                     <h6><b>&nbsp&nbsp&nbspDate Of Discharge&nbsp</b>:&nbsp</h6><br>

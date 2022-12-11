@@ -4,18 +4,19 @@
 session_start();
 
 $pid = $_SESSION['PID'];
-$query = "SELECT  patient_id, patient_name, patient_age, gender, patient_phone_number,dob ,permanent_address  FROM  patient_details WHERE patient_id='$pid'";
+$sql = mysqli_query($con,"select d.dname as name,s.spec_name as spec, p.prescription as pres,p.time as time from doctor_details d,doctor_prescription p,speciality s where p.pid='$pid' and p.did = d.did and d.designation =s.spec_id order by p.time ");
 
-$run = mysqli_query($con, $query);
-$res = mysqli_fetch_assoc($run);
+
+// $run = mysqli_query($con, $sql);
+// $res = mysqli_fetch_assoc($run);
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+    
+            <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
         <title> Patient Details</title>
 		
@@ -56,101 +57,42 @@ $res = mysqli_fetch_assoc($run);
                         </div>
                     </div>
                 </div>
-					<div class="card">
-						<div class="card-body">
-                        <div class="about-info">
-							<h3><b>About Me</b></h3>
-                        
-                            <div class="row">
-                                <div class="col-md-12"> 
-                                <div class="media mt-3 d-flex">
-                                        
-                                      
-											<div class="col-md-6">
-												<ul>                                          
-                                                    <li>
-                                                        <span class="title-span">Patient Id :</h4></span>
-                                                        <span class="info-span"><?php echo $res['patient_id']; ?></span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="title-span">Patient Name:</span>
-                                                        <span class="info-span"><?php echo $res['patient_name']; ?></span>
-                                                    </li>
-                                                    
+                <button onclick="javascript:demoFromHTML();">PDF</button>
+                <div class="row">
+					<h3 >BASIC PREVIOUS RECORDS</h3>
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="tab_customers" class="table table-striped">
+											<thead>
+												<tr>
+													<th>Patient ID</th>
+													<th>Name</th>
+                                                    <th>Phone Number</th>
+													<th>Past Records</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+                                                    while($run = mysqli_fetch_assoc($sql))
+                                                    {
 
-                                                    <li>
-                                                        <span class="title-span">Gender: </span>
-                                                        <span class="info-span"><?php echo $res['gender']; ?></span>
-                                                    </li>
-
-                                                    <li>
-                                                        <span class="title-span">Phone number:</span>
-                                                        <span class="info-span"><?php echo $res['patient_phone_number']; ?></span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="title-span">DOB:</span>
-                                                        <span class="info-span"><?php echo $res['dob']; ?></span>
-                                                    </li>
-                                                    <!-- <li>
-                                                        <span class="title-span">Spouse Name:</span>
-                                                        <span class="info-span"></span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="title-span">Spouse Age:</span>
-                                                        <span class="info-span"></span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="title-span">Spouse Contact: </span>
-                                                        <span class="info-span"></span>
-                                                    </li> -->
-                                                    <li>
-                                                        <span class="title-span"> Address:</span>
-                                                        <span class="info-span"><?php echo $res['permanent_address']; ?></span>
-                                                    </li>
-                                                </ul>
-											</div>
-										</div>
-
-										<div class="row mt-3">                                           
-										</div>
-										
-										<!-- <div class="row follow-sec">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="blue-box">
-                                                    <h3></h3>
-                                                    <p>LMP</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="blue-box">
-                                                    <h3></h3>
-                                                    <p>Expected Date of Delivery</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="blue-box">
-                                                    <h3></h3>
-                                                    <p>POG</p>
-                                                </div>
-                                            </div>
-										</div> -->
-										
+                                                        echo '<tr>
+                                                        <td>'.$run['pid'].'</td>
+                                                        <td>'.$run['did'].'</td>
+                                                        <td>'.$run['prescription'].'</td>
+														<td>'.$run['time'].'</td>
+                                                        </tr>';
+                                                    }
+                                                ?>
+											</tbody>
+										</table>
 									</div>
-								</div>								
+								</div>
 							</div>
 						</div>
-					</div>				
-				<!-- </div> -->
-				
-				<!-- Footer -->
-				<!-- <footer>
-					<p>Copyright © 2020 Dreamguys.</p>					
-				</footer> -->
-				<!-- /Footer -->
-			<!-- </div> -->
-			<!-- /Page Wrapper -->
-		
-        <!-- </div> -->
+					</div>
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->

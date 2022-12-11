@@ -9,12 +9,26 @@ if(isset($_POST['login']))
     if(mysqli_num_rows($result)>0)
     {
         $_SESSION['PID']=$pass;
-        header("location:patient_dashboard.php");
+        echo" <script>document.location='patient_dashboard.php'</script>";
+    
     }
     else
     {
         echo"<script>alert('Invalid Password')</script>";
     }
+    // if($details)
+    // {
+    // $_SESSION['hid']=$uid;
+    //  echo" <script>document.location='hospital_dashboard.php'</script>";
+    
+    //  }
+    
+    //  else
+    //  {
+    //     echo "<script type='text/javascript'>alert('Inavalid Username or Password')</script>";
+    
+    //  }
+
 }
 
 
@@ -54,7 +68,7 @@ if(isset($_POST['login']))
                 <div class="container">
                     <div class="loginbox">
                     <div class="login-left">
-                            <img class="img-fluid" src="assets/img/patient.png" alt="Logo">
+                            <img class="img-fluid" src="assets/img/logo.png" alt="Logo">
                         </div>
                         <div class="login-right">
                             <div class="login-right-wrap">
@@ -99,4 +113,4 @@ if(isset($_POST['login']))
         <script src="assets/js/script.js"></script>
         
     </body>
-</html>
+</html>         

@@ -12,6 +12,7 @@ if(isset($_POST['login']))
 if($details)
 {
     $_SESSION['DID']=$uid;
+    $_SESSION['NAME']=$dname;
 
     echo" <script>document.location='doctor_dashboard.php'</script>";
 

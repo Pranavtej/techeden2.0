@@ -6,12 +6,13 @@ if(isset($_POST['login']))
 {
  $uid = $_POST['pass'];
  $pass = $_POST['pass1'];
- $query= "select hid from hospital_details where hid='$uid' and hid='$pass'";
+ $query= "select hid,hname from hospital_details where hid='$uid' and hid='$pass'";
  $result=mysqli_query($con,$query) or die (mysqli_error($con));
  $details=mysqli_fetch_assoc($result);
 if($details)
 {
 $_SESSION['hid']=$uid;
+$_SESSION['hname']=$hname;
  echo" <script>document.location='hospital_dashboard.php'</script>";
 
  }
