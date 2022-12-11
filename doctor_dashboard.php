@@ -82,6 +82,8 @@ $sql = mysqli_query($con,"select pid from doctor_prescription  where did = '$did
 											</thead>
 											<tbody>
 												<?php
+												
+
                                                     while($run = mysqli_fetch_assoc($sql))
                                                     {
                                                         $new = strval($run['pid']);
@@ -96,7 +98,7 @@ $sql = mysqli_query($con,"select pid from doctor_prescription  where did = '$did
                                                         <td><a href="doctor_precords.php?pid='.$new1.'">
 														VIEW PATIENT RECORDS
 													    </a><td>
-                                                       
+														
                                                         </tr>';
                                                         
                                                     }

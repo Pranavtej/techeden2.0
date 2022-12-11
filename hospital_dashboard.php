@@ -133,12 +133,12 @@ $hid = $_SESSION['hid'];
                                 <div>
                                     <a href="get-access.php" class="btn btn-primary">NEW  PATIENT LINK FOR ONHR</a><br><br>
                                     <a href="new_olap.php" class="btn btn-primary">REGISTER NEW PATIENT TO ONHR</a>
-                                        <a href="get-access.php" class="btn btn-primary">get access</a>
+                                        <!-- <a href="get-access.php" class="btn btn-primary">get access</a> -->
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div >
-                                    <a href="search_patient.php" class="btn btn-primary">EXISTING PATIENT REGISTRATION</a>
+                                    <!-- <a href="search_patient.php" class="btn btn-primary">EXISTING PATIENT REGISTRATION</a> -->
                                  </div>
                           </div>
                             <!-- <div class="card-body">

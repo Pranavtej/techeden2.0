@@ -46,7 +46,7 @@ $sql1 = mysqli_query($con," SELECT `patient_id` as pid, `patient_name` as pn, `p
 					<div class="page-header">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h3 class="page-title">Get ACCESS</h3>
+                            <h3 class="page-title">Access Rights List</h3>
                             <!-- <ul class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                                     <li class="breadcrumb-item active">Student Dashboard</li>
