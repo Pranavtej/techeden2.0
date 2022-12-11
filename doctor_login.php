@@ -6,12 +6,14 @@ if(isset($_POST['login']))
 {
  $uid = $_POST['pass'];
  $pass = $_POST['pass1'];
- $query= "select did from doctor_details where did='$uid' and did='$pass'";
+ $query= "select did , dname from doctor_details where did='$uid' and did='$pass'";
  $result=mysqli_query($con,$query) or die (mysqli_error($con));
  $details=mysqli_fetch_assoc($result);
 if($details)
 {
- echo" <script>document.location='doctor_dashboard.php'</script>";
+    $_SESSION['DID']=$uid;
+
+    echo" <script>document.location='doctor_dashboard.php'</script>";
 
  }
 
@@ -55,7 +57,7 @@ if($details)
                 <div class="container">
                     <div class="loginbox">
                     <div class="login-left">
-                            <img class="img-fluid" src="assets/img/doctor.png" alt="Logo">
+                            <img class="img-fluid" src="assets/img/logo.png" alt="Logo">
                         </div>
                         <div class="login-right">
                             <div class="login-right-wrap">
